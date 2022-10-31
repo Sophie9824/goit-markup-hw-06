@@ -1032,6 +1032,7 @@ fill: var(--brand-color);
     right: 0;
     bottom: 0;
     left: 0;
+    padding: 40px;
     margin: auto;
     width: 528px;
     height: 581px;
@@ -1087,6 +1088,8 @@ fill: var(--brand-color);
 }
 
 .list-title {
+margin-top: 0;
+margin-bottom: 20px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -1166,7 +1169,8 @@ color: var(--background);
     line-height: calc(23/20);
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
 .modal-label {
@@ -1221,7 +1225,7 @@ color: var(--background);
 }
 
 .agreement-text {
-    margin-left: 8.38px;
+    margin-left: 8px;    
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1283,7 +1287,54 @@ color: var(--background);
 }
 
 
+.custom-checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    
+
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+
+}
 
 
 
+.border {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px var(--main-text-color) solid;
+    border-radius: 4px;
+    
+}
+
+
+.icon-checked {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    opacity: 0;
+}
+
+.custom-checkbox:checked + .border  .icon-checked {
+    opacity: 1;
+
+}
+
+
+.modal-icon {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
