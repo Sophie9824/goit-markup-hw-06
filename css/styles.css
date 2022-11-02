@@ -768,6 +768,7 @@ fill: var(--brand-color);
     height: 92px;
     justify-content: center;
     align-items: center;
+    transition: border, fill;
    
 }
 
@@ -1192,7 +1193,8 @@ color: var(--background);
 .modal-icon {
     position: absolute;
     left: 12px;
-    top: 11px;
+    top: 50%;
+    transform: translateY(-50%);
     fill: var(--main-text-color);
 }
 
